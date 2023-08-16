@@ -1,0 +1,24 @@
+function toCamelCase(str){
+  if(str.length===0){
+    return str;
+  }
+  let ans=[];
+//   let j=0;
+  for(var i=0;i<str.length;i++){
+    
+if(str[i]==='_'||str[i]==='-')
+{
+  i++;
+  ans.push(str[i].toUpperCase());
+ 
+
+}
+    else{
+    ans.push(str[i]);
+      
+}
+    
+
+}
+  return ans.join('');
+}
